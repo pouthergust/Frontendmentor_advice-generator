@@ -10,9 +10,12 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "predeploy": "npm run build-only",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "esbuild": "^0.24.2",
     "vue": "^3.5.13"
   },
   "devDependencies": {

@@ -13,7 +13,6 @@ const fetchAdvice = async () => {
       advice.value = slip.advice
       id.value = slip.id
     })
-    .error((err) => console.log('Error detected!', err))
 }
 
 onMounted(() => {
