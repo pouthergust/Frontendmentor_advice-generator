@@ -3,10 +3,6 @@ import { ref, onMounted } from 'vue'
 import PatternDividerDesktop from './icons/PatternDividerDesktop.vue'
 import DiceIcon from './icons/DiceIcon.vue'
 
-defineProps<{
-  msg: string
-}>()
-
 const advice = ref<string>('')
 const id = ref<string>('')
 
